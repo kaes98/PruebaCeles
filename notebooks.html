@@ -1,0 +1,698 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Prueba Celes &#8212; Prueba Celes</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Prueba Celes
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fnotebooks.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/notebooks.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Prueba Celes</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sql">SQL</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python">Python</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="prueba-celes">
+<h1>Prueba Celes<a class="headerlink" href="#prueba-celes" title="Permalink to this heading">#</a></h1>
+<section id="sql">
+<h2>SQL<a class="headerlink" href="#sql" title="Permalink to this heading">#</a></h2>
+<p><strong>Modelo de datos</strong>
+<img alt="" src="_images/Diagrama.png" /></p>
+<ol class="arabic simple">
+<li><p>Crear una consulta que liste todos los enemigos que aparecen en los episodios de Doctor Who donde aparece Rose Tyler como compañero, pero no aparece David Tennant como el doctor.</p></li>
+</ol>
+<p>La consulta propuesta para listar los enemigos es la siguiente:</p>
+<div class="cell tag_skip-execution docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>SELECT EnemyName
+FROM `prueba_celes.tblEpisode` AS tblEpisode
+INNER JOIN `prueba_celes.tblEpisodeCompanion` as tblEpisodeCompanion 
+ON tblEpisode.EpisodeId = tblEpisodeCompanion.EpisodeId
+INNER JOIN `prueba_celes.tblCompanion` as tblCompanion 
+ON tblEpisodeCompanion.CompanionId = tblCompanion.CompanionId
+INNER JOIN `prueba_celes.tblDoctor` as tblDoctor 
+ON tblEpisode.DoctorId = tblDoctor.DoctorId
+INNER JOIN `prueba_celes.tblEpisodeEnemy` as tblEpisodeEnemy 
+ON tblEpisode.EpisodeId = tblEpisodeEnemy.EpisodeId
+INNER JOIN `prueba_celes.tblEnemy` as tblEnemy
+ON tblEpisodeEnemy.EnemyId = tblEnemy.EnemyId
+WHERE CompanionName = &quot;Rose Tyler&quot; AND DoctorName != &quot;David Tennant&quot;
+GROUP BY EnemyName
+</pre></div>
+</div>
+</div>
+</div>
+<p>Luego de ejecutar la consulta, la lista de enemigos obtenidas fue:</p>
+<p><img alt="" src="_images/enemy.png" /></p>
+<ol class="arabic simple" start="2">
+<li><p>Para cada episodio de David Tennant (como el doctor), muestre para cada enemigo el numero de veces que aparecen en episodios que no son de David. (La interpretación que se hizo de este query )</p></li>
+</ol>
+<div class="cell tag_skip-execution docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>SELECT tblEnemy.EnemyName, COUNT(tblEpisode.EpisodeId) AS NumApariciones
+FROM `prueba_celes.tblEpisode` AS tblEpisode
+INNER JOIN `prueba_celes.tblEpisodeEnemy` AS tblEpisodeEnemy ON tblEpisode.EpisodeId = tblEpisodeEnemy.EpisodeId
+INNER JOIN `prueba_celes.tblEnemy` as tblEnemy ON tblEpisodeEnemy.EnemyId = tblEnemy.EnemyId
+INNER JOIN `prueba_celes.tblDoctor` as tblDoctor ON tblEpisode.DoctorId = tblDoctor.DoctorId
+WHERE DoctorName != &quot;David Tennant&quot; AND tblEnemy.EnemyId IN (SELECT tblEnemy.EnemyId
+FROM `prueba_celes.tblEpisode` AS tblEpisode
+INNER JOIN `prueba_celes.tblEpisodeEnemy` AS tblEpisodeEnemy ON tblEpisode.EpisodeId = tblEpisodeEnemy.EpisodeId
+INNER JOIN `prueba_celes.tblEnemy` as tblEnemy ON tblEpisodeEnemy.EnemyId = tblEnemy.EnemyId
+INNER JOIN `prueba_celes.tblDoctor` as tblDoctor ON tblEpisode.DoctorId = tblDoctor.DoctorId
+WHERE DoctorName = &quot;David Tennant&quot;
+GROUP BY EnemyId)
+GROUP BY EnemyName
+</pre></div>
+</div>
+</div>
+</div>
+<p>A continuación la lista de enemigos que aparecieron en capitulos con David Tennat, y la cantidad de veces que aparecieron en otros capitulos donde David Tennat no era el Doctor:</p>
+<p><img alt="" src="_images/enemy2.png" /></p>
+<ol class="arabic simple" start="3">
+<li><p>Crea una consulta que liste los capitulos de David Tennat que no comparten enemigos con ningun otro episodio que no sea de Tennant.</p></li>
+</ol>
+<div class="cell tag_skip-execution docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>SELECT tblEpisode.EpisodeId, tblEpisode.Title
+FROM `prueba_celes.tblEpisode` AS tblEpisode
+INNER JOIN `prueba_celes.tblEpisodeEnemy` AS tblEpisodeEnemy ON tblEpisode.EpisodeId = tblEpisodeEnemy.EpisodeId
+INNER JOIN `prueba_celes.tblEnemy` as tblEnemy ON tblEpisodeEnemy.EnemyId = tblEnemy.EnemyId
+INNER JOIN `prueba_celes.tblDoctor` as tblDoctor ON tblEpisode.DoctorId = tblDoctor.DoctorId
+WHERE DoctorName = &quot;David Tennant&quot; AND tblEnemy.EnemyId NOT IN (SELECT tblEnemy.EnemyId
+FROM `prueba_celes.tblEpisode` AS tblEpisode
+INNER JOIN `prueba_celes.tblEpisodeEnemy` AS tblEpisodeEnemy ON tblEpisode.EpisodeId = tblEpisodeEnemy.EpisodeId
+INNER JOIN `prueba_celes.tblEnemy` as tblEnemy ON tblEpisodeEnemy.EnemyId = tblEnemy.EnemyId
+INNER JOIN `prueba_celes.tblDoctor` as tblDoctor ON tblEpisode.DoctorId = tblDoctor.DoctorId
+WHERE DoctorName != &quot;David Tennant&quot;
+GROUP BY EnemyId)
+GROUP BY tblEpisode.EpisodeId, tblEpisode.Title
+ORDER BY tblEpisode.EpisodeId
+</pre></div>
+</div>
+</div>
+</div>
+<p>De la consulta anterior resulta un listado de 32 episodios de David Tennant que no compartene enemigos con episodios de otros Doctores.
+<img alt="" src="_images/episode1.png" />
+<img alt="" src="_images/episode2.png" /></p>
+<p>4.Eliminar registros duplicados para las cedula, basado en el Timestamp. Solo dejar el utlimo registro para cada cedula.</p>
+<div class="cell tag_skip-execution docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>SELECT tblCedula.Id, tblCedula.Cedula, TimeStamp
+FROM `prueba_celes.tblCedula` as tblCedula
+INNER JOIN (
+SELECT Cedula, MAX(TimeStamp) as LastEntry
+FROM `prueba_celes.tblCedula`
+GROUP BY Cedula
+) as tbl 
+ON tblCedula.Cedula = tbl.Cedula AND tblCedula.TimeStamp = tbl.LastEntry
+ORDER BY tblCedula.Cedula ASC
+</pre></div>
+</div>
+</div>
+</div>
+<p>La tabla resultante es:
+<img alt="" src="_images/cedula.png" /></p>
+</section>
+<section id="python">
+<h2>Python<a class="headerlink" href="#python" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Make a UDF which receives as a parameter a list of “Area/Location” strings. The result must be a single dataframe with
+all responses from the endpoint: <a class="reference external" href="https://worldtimeapi.org/api/timezone/+Area+Location">https://worldtimeapi.org/api/timezone/+Area+Location</a>
+e.g: <a class="reference external" href="https://worldtimeapi.org/api/timezone/America/New_York">https://worldtimeapi.org/api/timezone/America/New_York</a>
+Here you can find all timezones: <a class="reference external" href="https://worldtimeapi.org/timezones">https://worldtimeapi.org/timezones</a></p></li>
+</ol>
+<p>The dataframe must have this columns:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ID: Create a unique ID (not incremental ID)
+Year: Extract from “datetime”
+Month: Extract from “datetime”
+Day: Extract from “datetime”
+Time: “HH:MM:SS” from “datetime”
+Area: Extract from “timezone”
+Location: Extract from “timezone”
+</pre></div>
+</div>
+<p>Iterate over at least 5 time zones with a sleep of 10 seconds after each iteration.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">sleep</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">import</span> <span class="nn">uuid</span>
+
+<span class="n">lista</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">def</span> <span class="nf">get_timezone_location</span><span class="p">(</span><span class="n">locations_list</span><span class="p">):</span>
+  
+  <span class="k">for</span> <span class="n">location</span> <span class="ow">in</span> <span class="n">locations_list</span><span class="p">:</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;https://worldtimeapi.org/api/timezone/</span><span class="si">{</span><span class="n">location</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+      <span class="n">response_data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+      <span class="n">datime</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">response_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;datetime&quot;</span><span class="p">),</span> <span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">T%H:%M:%S.</span><span class="si">%f</span><span class="s2">%z&quot;</span><span class="p">)</span>
+      <span class="n">area</span> <span class="o">=</span> <span class="n">response_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;timezone&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+      <span class="n">location</span> <span class="o">=</span> <span class="n">response_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;timezone&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>      
+      <span class="n">year</span> <span class="o">=</span> <span class="n">datime</span><span class="o">.</span><span class="n">year</span>
+      <span class="n">month</span> <span class="o">=</span> <span class="n">datime</span><span class="o">.</span><span class="n">month</span>
+      <span class="n">day</span> <span class="o">=</span> <span class="n">datime</span><span class="o">.</span><span class="n">day</span>
+      <span class="n">tiempo</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">datime</span><span class="o">.</span><span class="n">time</span><span class="p">())[</span><span class="mi">0</span><span class="p">:</span><span class="mi">8</span><span class="p">]</span>
+
+      <span class="n">dict_time_location</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;Id&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()),</span>
+        <span class="s2">&quot;Year&quot;</span><span class="p">:</span> <span class="n">year</span><span class="p">,</span>
+        <span class="s2">&quot;Month&quot;</span><span class="p">:</span> <span class="n">month</span><span class="p">,</span>
+        <span class="s2">&quot;Day&quot;</span><span class="p">:</span> <span class="n">day</span><span class="p">,</span>
+        <span class="s2">&quot;Time&quot;</span><span class="p">:</span> <span class="n">tiempo</span><span class="p">,</span>
+        <span class="s2">&quot;Area&quot;</span><span class="p">:</span> <span class="n">area</span><span class="p">,</span>
+        <span class="s2">&quot;Location&quot;</span><span class="p">:</span> <span class="n">location</span>  
+      <span class="p">}</span>
+
+    <span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dict_time_location</span><span class="p">)</span>
+    
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>  
+   
+  <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
+  
+  <span class="k">return</span> <span class="n">df</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">locations</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Asia/Bangkok&quot;</span><span class="p">,</span> <span class="s2">&quot;Europe/Rome&quot;</span><span class="p">,</span> <span class="s2">&quot;Pacific/Honolulu&quot;</span><span class="p">,</span> <span class="s2">&quot;America/Sao_Paulo&quot;</span><span class="p">,</span> <span class="s2">&quot;Africa/Cairo&quot;</span><span class="p">]</span>
+
+<span class="n">df_locations</span> <span class="o">=</span> <span class="n">get_timezone_location</span><span class="p">(</span><span class="n">locations</span><span class="p">)</span>
+<span class="n">df_locations</span>
+</pre></div>
+</div>
+</div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Crear una función que permita convertir números enteros en números romanos. (Para este caso se limita la función para que solo pueda convertir números de 4 digitos como maximo)</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_romano</span><span class="p">(</span><span class="n">num_entero</span><span class="p">):</span>
+    
+    <span class="n">num_romanos</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;M&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+                <span class="s2">&quot;CM&quot;</span><span class="p">:</span> <span class="mi">900</span><span class="p">,</span>
+                <span class="s2">&quot;D&quot;</span><span class="p">:</span> <span class="mi">500</span><span class="p">,</span>
+                <span class="s2">&quot;CD&quot;</span><span class="p">:</span> <span class="mi">400</span><span class="p">,</span>
+                <span class="s2">&quot;C&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+                <span class="s2">&quot;XC&quot;</span><span class="p">:</span> <span class="mi">90</span><span class="p">,</span>
+                <span class="s2">&quot;L&quot;</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span>
+                <span class="s2">&quot;XL&quot;</span><span class="p">:</span> <span class="mi">40</span><span class="p">,</span>
+                <span class="s2">&quot;X&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+                <span class="s2">&quot;IX&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+                <span class="s2">&quot;V&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+                <span class="s2">&quot;IV&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+                <span class="s2">&quot;I&quot;</span><span class="p">:</span> <span class="mi">1</span>    
+    <span class="p">}</span>
+    
+    <span class="k">if</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">num_entero</span><span class="p">)))</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">:</span>      
+        <span class="n">num_romano</span> <span class="o">=</span> <span class="nb">str</span><span class="p">()</span>
+        
+        <span class="k">for</span> <span class="n">romano</span><span class="p">,</span> <span class="n">entero</span> <span class="ow">in</span> <span class="n">num_romanos</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">while</span> <span class="p">(</span><span class="n">num_entero</span> <span class="o">&gt;=</span> <span class="n">entero</span><span class="p">):</span>
+                <span class="n">num_romano</span> <span class="o">=</span> <span class="n">num_romano</span> <span class="o">+</span> <span class="n">romano</span>
+                <span class="n">num_entero</span> <span class="o">=</span> <span class="n">num_entero</span> <span class="o">-</span> <span class="n">entero</span>
+                
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">num_romano</span> <span class="o">=</span> <span class="s2">&quot;Solo se pueden convertir números de 4 o menos digitos&quot;</span>
+        
+    <span class="k">return</span> <span class="n">num_romano</span>
+        
+        
+<span class="n">get_romano</span><span class="p">(</span><span class="mi">101</span><span class="p">)</span>      
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;CI&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sql">SQL</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python">Python</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Karina Rodríguez
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
